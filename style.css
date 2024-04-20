@@ -1,0 +1,120 @@
+* {
+  font-family: "Nunito";
+  font-weight: 700;
+  box-sizing: border-box;
+}
+.layout {
+  padding: 0;
+  margin: 0;
+  background-color: #ffffe6;
+  color: #2f357e;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
+.nav-container {
+  background-color: #ffe600;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 45px;
+  width: 100%;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 15pt;
+}
+.nav .logo {
+  padding: 2px;
+  margin-left: 10px;
+  height: 25px;
+}
+.title {
+  width: 100%;
+  text-align: center;
+  margin-left: -60px;
+}
+
+.main {
+  font-family: "Nunito";
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 800px;
+  height: 100%;
+}
+
+.main h3 {
+  font-family: "Nunito";
+  font-weight: 400;
+}
+#input {
+  font-size: 10pt;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+}
+#output {
+  height: 100px;
+  width: 100%;
+  background-color: #eaeaef;
+  font-size: 10pt;
+  border: 2px solid #fea;
+  padding: 5px 5px;
+  border-radius: 3px;
+}
+
+.w3-button {
+  width: 100px;
+}
+.footer,
+.footer a {
+  justify-self: flex-end;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bebas Neue";
+  padding: 17px 0px;
+  margin-bottom: 40px;
+}
+
+.notification {
+  font-family: "Nunito";
+  font-size: 12pt;
+  font-weight: 500;
+  background-color: white;
+  padding: 15px 35px 15px 22px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  border-radius: 50px;
+  position: absolute;
+  top: 70px;
+  opacity: 0;
+}
+.notification > span {
+  margin-right: 16px;
+}
+.reverse-toast-animation {
+  animation-name: reverse-toast;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+}
+.hidden {
+  display: none;
+}
+@keyframes reverse-toast {
+  0%  {top: -60px;opacity: 0;}
+  5%  {top: 76px;opacity: 1;}
+  7%  {top: 68px;}
+  9%  {top: 70px;}
+  30% {top: 70px;}
+  32% {top: 68px;}
+  35% {top: 76px;opacity: 1;}
+  50% {top: -60px;}
+  100% {top: -60px;opacity: 0;}
+}
