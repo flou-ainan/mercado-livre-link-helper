@@ -118,3 +118,9 @@
   50% {top: -60px;}
   100% {top: -60px;opacity: 0;}
 }
+
+.sobre {
+  font-size: medium;
+  margin-right: 5px;
+  background-color: #ffffe6;
+}
