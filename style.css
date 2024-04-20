@@ -119,8 +119,7 @@
   100% {top: -60px;opacity: 0;}
 }
 
-.sobre {
+.nav-link {
   font-size: medium;
-  margin-right: 5px;
-  background-color: #ffffe6;
+  margin-right: 10px;
 }
