@@ -24,6 +24,7 @@ function remove() {
   output.innerHTML = link
 }
 function clean(){
+  alert("clean test")
   input.value = ""
 }
 
