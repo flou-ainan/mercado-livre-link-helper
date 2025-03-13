@@ -1,8 +1,6 @@
 const input = document.getElementById("input");
 const output = document.getElementById("output");
 const notification = document.getElementById("notification")
-alert("Olá")
-
 input.addEventListener("input", function(event) {
    event.preventDefault();
   // remove()
